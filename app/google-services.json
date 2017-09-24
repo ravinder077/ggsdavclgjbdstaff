@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "887292687247",
+    "firebase_url": "https://ggsdavjbd.firebaseio.com",
+    "project_id": "ggsdavjbd",
+    "storage_bucket": "ggsdavjbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887292687247:android:664cf7092de27970",
+        "android_client_info": {
+          "package_name": "com.example.ravinder077.ggsdav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887292687247-piuvsvkco0ijvviaq577sqd18arjmb3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUpHJIuF8NWticf5Yd3jvQ94x6yTdFjVs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
