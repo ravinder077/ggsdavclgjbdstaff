@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="7"
+    >
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:text="Welcome"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+
+        />
+
+    <ProgressBar
+        android:layout_below="@+id/txttime"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="20dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="50dp"
+        android:minWidth="250dp"
+        android:progress="1"
+        android:layout_weight="1"
+        android:layout_marginStart="50dp"
+        />
+
+
+    <EditText
+
+        android:id="@+id/etmob"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="30dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:hint="Enter OTP"
+        android:inputType="number"
+
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/btncont"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:text="Continue"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/btnresend"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:text="Resend OTP"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        />
+</LinearLayout>

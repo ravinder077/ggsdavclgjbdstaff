@@ -38,16 +38,16 @@ public class taba extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 
-        View view = inflater.inflate(R.layout.home, container, false);
+        View view = inflater.inflate(R.layout.activity_main1, container, false);
 
-        Button button=(Button)view.findViewById(R.id.btnnotifications);
+    /*    Button button=(Button)view.findViewById(R.id.btnnotifications);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-        /*        PendingIntent pendingIntent = PendingIntent.getActivity(getActivity(), 0,
+        *//*        PendingIntent pendingIntent = PendingIntent.getActivity(getActivity(), 0,
                         new Intent(getActivity(), tabb.class), 0);
 
                 Notification notification = new Notification.Builder(getActivity())
@@ -60,7 +60,7 @@ public class taba extends Fragment {
 
                 NotificationManager notificationManager =
                         (NotificationManager) getActivity().getSystemService(NOTIFICATION_SERVICE);
-                notificationManager.notify(1, notification);*/
+                notificationManager.notify(1, notification);*//*
 
                 NotificationCompat.Builder mBuilder =
                         (NotificationCompat.Builder) new NotificationCompat.Builder(getContext())
@@ -79,7 +79,7 @@ public class taba extends Fragment {
 
             }
         });
-
+*/
 
         return view;
 

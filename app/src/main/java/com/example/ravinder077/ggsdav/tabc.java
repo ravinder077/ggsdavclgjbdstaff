@@ -10,12 +10,12 @@ import android.view.ViewGroup;
  * Created by ravinder077 on 23-09-2017.
  */
 
-public class tabb extends Fragment {
+public class tabc extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 
-        View view = inflater.inflate(R.layout.board, container, false);
+        View view = inflater.inflate(R.layout.davcard, container, false);
 
         return view;
 

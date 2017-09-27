@@ -22,10 +22,10 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
                 return tab22;
 
             case 1:
-                tabb tab2 = new tabb();
+                NoticeBoard tab2 = new NoticeBoard();
                 return tab2;
             case 2:
-                tabb cff=new tabb();
+                tabc cff=new tabc();
                 return cff;
 
 

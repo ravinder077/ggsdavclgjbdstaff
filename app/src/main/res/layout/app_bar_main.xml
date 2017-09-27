@@ -33,7 +33,7 @@ tools:context=".MainActivity">
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
 <android.support.v4.view.ViewPager
-    android:layout_marginTop="70sp"
+    android:layout_marginTop="81sp"
     android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="fill_parent" android:layout_below="@id/tab_layout"/>
