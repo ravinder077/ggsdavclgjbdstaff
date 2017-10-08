@@ -33,11 +33,15 @@ public class Register extends AppCompatActivity {
         Cursor resultSet = mydata.rawQuery("Select * from stureg", null);
         if(resultSet.getCount()>0) {
             resultSet.moveToFirst();
-
+            String name = resultSet.getString(0);
             String mnum = resultSet.getString(1);
 
+
             if (mnum != null) {
+                this.finish();
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);  // change
+                i.putExtra("name",name);
+                i.putExtra("mobile",mnum);
                 startActivity(i);
             }
 

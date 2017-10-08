@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS"/>
     <application
+
         android:name=".ApplicationController"
         android:allowBackup="true"
         android:icon="@drawable/a"
@@ -48,8 +49,10 @@
 
         <activity android:name=".ResultActivity"/>
 
-        <activity android:name=".MainActivity"/>
+        <activity android:name="GallaryActivity"> </activity>
+
         <activity android:name=".ResendOtp"/>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/tabaa"
+    android:weightSum="2"
+
+    >
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/linearlayoutnotificationid"
+            android:weightSum="5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/ee"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1.5
+"               android:id="@+id/notificationid"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="01"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                />
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noticeboard"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayoutactivityid"
+            android:weightSum="5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/ee"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/eventid"
+                android:layout_weight="1.5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                />
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Events"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/linearlayout_galleryid"
+            android:weightSum="5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/ee"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayoutcontactusid"
+            android:weightSum="5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/ee"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About US"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

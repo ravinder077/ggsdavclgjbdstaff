@@ -25,7 +25,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
                 NoticeBoard tab2 = new NoticeBoard();
                 return tab2;
             case 2:
-                tabc cff=new tabc();
+                NoticeBoardActivity cff=new NoticeBoardActivity();
                 return cff;
 
 

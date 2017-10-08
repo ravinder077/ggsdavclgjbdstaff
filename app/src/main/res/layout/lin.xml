@@ -8,48 +8,52 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <android.support.v7.widget.CardView
         android:id="@+id/cardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="100dp"
-        card_view:cardBackgroundColor="@color/cardview_initial_background"
-        card_view:cardCornerRadius="8dp"
         android:layout_marginLeft="@dimen/margin_tiny"
         android:layout_marginRight="@dimen/margin_tiny"
-        >
+        android:elevation="100dp"
 
-  <RelativeLayout
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:textAlignment="center"
-            android:background="@android:color/holo_red_light"
-            android:textColor="@android:color/white"
-            android:text="New Update is comming "/>
-        <TextView
-            android:id="@+id/txt2"
-            android:layout_below="@+id/txt1"
+        card_view:cardBackgroundColor="@color/backtrans"
+        card_view:cardCornerRadius="8dp">
+
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_medium"
-            android:text="there is going to be fees depost and last date is kjdkjsdjk "
-            />
-      <TextView
-          android:id="@+id/txt3"
-          android:layout_below="@+id/txt2"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:textSize="15dp"
-          android:textAlignment="center"
-          android:background="@android:color/holo_green_dark"
-          android:textColor="@android:color/white"
-          android:text="Shared at 20/20/2017 4:3:00 Am "/>
-  </RelativeLayout>
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:text="New Update is comming "
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt1"
+                android:layout_margin="@dimen/margin_medium"
+                android:textColor="@android:color/white"
+                android:text="there is going to be fees depost and last date is kjdkjsdjk " />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt2"
+                android:background="@android:color/holo_blue_light"
+                android:text="Shared at 20/20/2017 4:3:00 Am "
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+        </RelativeLayout>
     </android.support.v7.widget.CardView>
 
 
