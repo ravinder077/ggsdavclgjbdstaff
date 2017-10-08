@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ravinder077.ggsdav">
+    package="com.tuespotsolutions.ravinder077.ggsdavstaff">
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -48,12 +48,13 @@
         </service>
 
 
-        <activity android:name=".ResultActivity"/>
+        <activity android:name="com.tuespotsolutions.ravinder077.ggsdavstaff.ResultActivity"/>
 
-        <activity android:name="GallaryActivity"> </activity>
+        <activity android:name="com.tuespotsolutions.ravinder077.ggsdavstaff.GallaryActivity"> </activity>
 
-        <activity android:name=".ResendOtp"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name="com.tuespotsolutions.ravinder077.ggsdavstaff.ResendOtp"/>
+        <activity android:name="com.tuespotsolutions.ravinder077.ggsdavstaff.MainActivity"/>
+        <activity android:name=".SelectOption"></activity>
     </application>
 
 </manifest>
