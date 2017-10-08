@@ -11,12 +11,14 @@
 
     >
     <LinearLayout
+
         android:weightSum="2"
         android:layout_weight="1"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <LinearLayout
+            android:layout_margin="10dp"
             android:id="@+id/linearlayoutnotificationid"
             android:weightSum="5"
             android:layout_weight="1"
@@ -47,6 +49,7 @@
 
         </LinearLayout>
         <LinearLayout
+            android:layout_margin="10dp"
             android:id="@+id/linearlayoutactivityid"
             android:weightSum="5"
             android:layout_weight="1"
@@ -83,6 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <LinearLayout
+            android:layout_margin="10dp"
             android:id="@+id/linearlayout_galleryid"
             android:weightSum="5"
             android:layout_weight="1"
@@ -105,6 +109,7 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:layout_margin="10dp"
             android:id="@+id/linearlayoutcontactusid"
             android:weightSum="5"
             android:layout_weight="1"

@@ -156,6 +156,23 @@ public class MainActivity extends AppCompatActivity
 
 
        }
+       else if (id == R.id.nav_logout) {
+
+
+           new AlertDialog.Builder(this)
+                   .setMessage("Are you sure you want to exit?")
+                   .setCancelable(false)
+                   .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                       public void onClick(DialogInterface dialog, int id) {
+                           MainActivity.this.finish();
+                       }
+                   })
+                   .setNegativeButton("No", null)
+                   .show();
+
+       }
+
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
