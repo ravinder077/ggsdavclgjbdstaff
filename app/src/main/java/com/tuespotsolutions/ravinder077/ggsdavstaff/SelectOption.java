@@ -1,5 +1,6 @@
 package com.tuespotsolutions.ravinder077.ggsdavstaff;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -20,11 +21,20 @@ public class SelectOption extends AppCompatActivity {
         Button btnevent=(Button)findViewById(R.id.btnsotpevent);
         Button btnnotification=(Button)findViewById(R.id.btnsotpnotification);
         Button btnimages=(Button)findViewById(R.id.btnimages);
+        Button btnback=(Button)findViewById(R.id.btnsotpcancel);
+         btnback.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent=new Intent(SelectOption.this,MainActivity.class);
+                 startActivity(intent);
+             }
+         });
 
         btnevent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SelectOption.this, "Event", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(SelectOption.this,EventShare.class);
+                startActivity(intent);
             }
         });
 
@@ -32,7 +42,8 @@ public class SelectOption extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
+                Intent intent=new Intent(SelectOption.this,NotificationShare.class);
+                startActivity(intent);
 
             }
         });
@@ -43,6 +54,9 @@ public class SelectOption extends AppCompatActivity {
                 Toast.makeText(SelectOption.this, "images", Toast.LENGTH_SHORT).show();
             }
         });
+
+
+
 
     }
 }

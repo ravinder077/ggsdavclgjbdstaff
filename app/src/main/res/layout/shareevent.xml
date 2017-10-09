@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@drawable/bg_messages"
+    android:weightSum="20">
+
+
+    <TextView
+
+        android:id="@+id/txtwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Share Event Details"
+        android:textAllCaps="true"
+
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+
+        android:id="@+id/etnname"
+        android:background="@android:color/holo_blue_dark"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:hint="Enter Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_weight="2"/>
+
+    <EditText
+
+        android:id="@+id/etnvenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+
+        android:hint="Enter Venue"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+    <EditText
+        android:focusableInTouchMode="false"
+        android:editable="false"
+        android:id="@+id/etndate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+
+        android:hint="Enter Date"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+
+
+    <EditText
+
+        android:id="@+id/etnstime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+
+        android:hint="Enter Start Time"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+    <EditText
+
+        android:id="@+id/entendtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+
+        android:hint="Enter End Time"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+    <EditText
+
+        android:id="@+id/entorgnaizer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+
+        android:hint="Enter Orgnaizer"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+    <EditText
+
+        android:id="@+id/entcontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+
+        android:hint="Enter Contact"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+    <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+            android:text="Share"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btncancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Back"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

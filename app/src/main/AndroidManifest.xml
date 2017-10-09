@@ -55,6 +55,8 @@
         <activity android:name="com.tuespotsolutions.ravinder077.ggsdavstaff.ResendOtp"/>
         <activity android:name="com.tuespotsolutions.ravinder077.ggsdavstaff.MainActivity"/>
         <activity android:name=".SelectOption"></activity>
+        <activity android:name="NotificationShare"></activity>
+        <activity android:name=".EventShare"></activity>
     </application>
 
 </manifest>

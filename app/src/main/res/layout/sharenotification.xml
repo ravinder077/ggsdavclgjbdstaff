@@ -19,19 +19,14 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:layout_marginTop="50dp"
-        android:src="@drawable/logo"
-        android:layout_width="match_parent"
-        android:layout_height="168dp" />
 
     <EditText
 
-        android:id="@+id/etname"
+        android:id="@+id/etnsubject"
         android:background="@android:color/holo_blue_dark"
         android:inputType="text"
         android:textColor="@android:color/white"
-        android:hint="Enter Your Name"
+        android:hint="Enter Subject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -40,36 +35,52 @@
         android:gravity="center"
         android:layout_weight="0.30" />
 
+
+
+
     <EditText
 
         android:id="@+id/etmob"
+        android:layout_height="150dp"
+        android:inputType="text|textMultiLine"
+        android:gravity="top"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+
        android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="30dp"
         android:background="@android:color/holo_blue_dark"
-        android:gravity="center"
+
         android:layout_weight="0.30"
-        android:hint="Enter Mobile Number"
-        android:inputType="number"
+        android:hint="Enter Notification information"
+
 
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white" />
 
 
     <Button
-            android:id="@+id/btnsotp"
+            android:id="@+id/btnsubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="Send OTP"
+            android:text="Share"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:background="@android:color/holo_red_light"
             android:textColor="@android:color/white" />
 
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btncancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
+        android:text="Back"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white" />
 
 
 </LinearLayout>

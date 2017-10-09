@@ -68,7 +68,7 @@ public class MyAndroidFirebaseMsgService extends FirebaseMessagingService {
     }
 
     private void createNotification( String messageBody) {
-        Intent intent = new Intent( this , ResultActivity. class );
+        Intent intent = new Intent( this , MainActivity. class );
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent resultIntent = PendingIntent.getActivity( this , 0, intent,
                 PendingIntent.FLAG_ONE_SHOT);
@@ -87,6 +87,8 @@ public class MyAndroidFirebaseMsgService extends FirebaseMessagingService {
 
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+
 
         notificationManager.notify(0, mNotificationBuilder.build());
     }
