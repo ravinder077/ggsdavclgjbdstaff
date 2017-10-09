@@ -11,6 +11,8 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
 
         android:name=".ApplicationController"
@@ -57,6 +59,7 @@
         <activity android:name=".SelectOption"></activity>
         <activity android:name="NotificationShare"></activity>
         <activity android:name=".EventShare"></activity>
+        <activity android:name=".ImagesShare"></activity>
     </application>
 
 </manifest>

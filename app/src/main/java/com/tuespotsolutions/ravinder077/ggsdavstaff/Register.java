@@ -13,6 +13,7 @@ import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.concurrent.ExecutionException;
 
@@ -103,56 +104,79 @@ public class Register extends AppCompatActivity {
                 else
 
                 {
-                    OtpGen otpg=new OtpGen();
-                    String numurl="http://omtii.com/dav/app/otpgen.php?id="+etmob.getText();
+
+                    OtpGen otpg1 = new OtpGen();
+                    String numurl1 = "http://timepasstoday.com/checkregister.php?id=" + etmob.getText();
 
 
-                    System.err.println("numurl"+numurl);
+                    System.err.println("numurl" + numurl1);
 
-                    otpg.execute(numurl);
-                    String st=null;
+                    otpg1.execute(numurl1);
+                    String st1 = null;
                     try {
-                        st=otpg.get();
-                        System.err.println("Otp=" + st);
+                        st1 = otpg1.get();
+                        System.err.println("result=" + st1);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     } catch (ExecutionException e) {
                         e.printStackTrace();
                     }
-                    //Toast.makeText(login.this, st, Toast.LENGTH_SHORT).show();
 
-                    SmsManager sms = SmsManager.getDefault();
-                    String mobno=etmob.getText().toString();
-                    String sname=etname.getText().toString();
-                    if(st==null)
+                    if (st1.equalsIgnoreCase("yes")) {
+                        OtpGen otpg = new OtpGen();
+                        String numurl = "http://omtii.com/dav/app/otpgen.php?id=" + etmob.getText();
+
+
+                        System.err.println("numurl" + numurl);
+
+                        otpg.execute(numurl);
+                        String st = null;
+                        try {
+                            st = otpg.get();
+                            System.err.println("Otp=" + st);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        } catch (ExecutionException e) {
+                            e.printStackTrace();
+                        }
+                        //Toast.makeText(login.this, st, Toast.LENGTH_SHORT).show();
+
+                        SmsManager sms = SmsManager.getDefault();
+                        String mobno = etmob.getText().toString();
+                        String sname = etname.getText().toString();
+                        if (st == null) {
+                            // String mess="Please Connect your Device with Internet";
+                            //sms.sendTextMessage(mobno, null,mess , null, null);
+
+                            // Toast.makeText(login.this, "Please Wait", Toast.LENGTH_SHORT).show();
+                            etmob.setError("Please check your network connection and try again");
+
+                        } else {
+
+                            //String mess = "Your One Time Password (OTP) for Direct Message is " + st + ". Only valid for 20 min.";
+                            // sms.sendTextMessage(mobno, null,mess , null, null);
+
+                            OtpGen otpg2 = new OtpGen();
+                            String numur2 = "http://omtii.com/dav/app/otpapi.php?mob=" + mobno + "&otp=" + st;
+
+                            System.err.println("numurl" + numur2);
+
+                            otpg2.execute(numur2);
+
+                            Intent i = new Intent(v.getContext(), ResendOtp.class);
+                            i.putExtra("sotp", st);
+                            i.putExtra("mobno", mobno);
+                            i.putExtra("sname", sname);
+                            startActivity(i);
+                        }
+
+                    }
+                    else
                     {
-                       // String mess="Please Connect your Device with Internet";
-                        //sms.sendTextMessage(mobno, null,mess , null, null);
-
-                        // Toast.makeText(login.this, "Please Wait", Toast.LENGTH_SHORT).show();
-                        etmob.setError("Please check your network connection and try again");
-
+                        Toast.makeText(Register.this, "Please Register with Us as Staff", Toast.LENGTH_SHORT).show();
                     }
-                    else {
-
-                    //String mess = "Your One Time Password (OTP) for Direct Message is " + st + ". Only valid for 20 min.";
-                    // sms.sendTextMessage(mobno, null,mess , null, null);
-
-                       OtpGen otpg1=new OtpGen();
-                        String numur2="http://omtii.com/dav/app/otpapi.php?mob="+mobno+"&otp="+st;
-
-                        System.err.println("numurl"+numur2);
-
-                        otpg1.execute(numur2);
-
-                        Intent i = new Intent(v.getContext(), ResendOtp.class);
-                        i.putExtra("sotp",st);
-                        i.putExtra("mobno",mobno);
-                        i.putExtra("sname",sname);
-                        startActivity(i);
-                    }
-
                 }
+
 
                          }
 

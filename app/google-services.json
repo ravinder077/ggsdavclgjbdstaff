@@ -8,9 +8,40 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:887292687247:android:664cf7092de27970",
+        "mobilesdk_app_id": "1:887292687247:android:0124a78c1c7d3d3e",
         "android_client_info": {
-          "package_name": "com.example.ravinder077.ggsdav"
+          "package_name": "com.tuespotsolutions.ravinder077.ggsdav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887292687247-piuvsvkco0ijvviaq577sqd18arjmb3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUpHJIuF8NWticf5Yd3jvQ94x6yTdFjVs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887292687247:android:14de996300c319e9",
+        "android_client_info": {
+          "package_name": "com.tuespotsolutions.ravinder077.ggsdavstaff"
         }
       },
       "oauth_client": [

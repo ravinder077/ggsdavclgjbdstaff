@@ -119,7 +119,7 @@ public class ResendOtp extends AppCompatActivity {
 
                         OtpGen udata=new OtpGen();
                         String numurl="http://omtii.com/dav/app/sturegister.php?name=" + sname + "&mobile=" + mobno;
-                        udata.execute(numurl);
+                        //udata.execute(numurl);
 
                         SQLiteDatabase mydata = null;
                         mydata = openOrCreateDatabase("dav", MODE_PRIVATE, null);

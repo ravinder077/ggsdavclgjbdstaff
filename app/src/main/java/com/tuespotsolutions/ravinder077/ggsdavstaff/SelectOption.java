@@ -51,7 +51,8 @@ public class SelectOption extends AppCompatActivity {
         btnimages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SelectOption.this, "images", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(SelectOption.this,ImagesShare.class);
+                startActivity(intent);
             }
         });
 

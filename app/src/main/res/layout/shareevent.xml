@@ -74,7 +74,8 @@
 
 
     <EditText
-
+        android:focusableInTouchMode="false"
+        android:editable="false"
         android:id="@+id/etnstime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,7 +91,8 @@
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white" />
     <EditText
-
+        android:focusableInTouchMode="false"
+        android:editable="false"
         android:id="@+id/entendtime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -134,7 +136,7 @@
         android:gravity="center"
 
         android:hint="Enter Contact"
-        android:inputType="text"
+        android:inputType="number"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white" />
     <Button
